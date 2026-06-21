@@ -501,6 +501,25 @@ nav ul li a:hover {
     }
 }
 
+.btn-contato-principal {
+    display: inline-block !important;
+    background-color: #C5A880 !important; 
+    color: #FFFFFF !important;            
+    padding: 15px 40px;                   
+    border-radius: 30px;                  
+    text-decoration: none;
+    font-weight: 600;                     
+    text-transform: uppercase;           
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;     
+    border: none;
+    text-align: center;
+}
+
+.btn-contato-principal:hover {
+    background-color: #B0946B !important; 
+}
+
 @media (max-width: 768px) {
     body {
     padding-bottom: 60px; 
