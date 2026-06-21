@@ -397,6 +397,26 @@ nav ul li a:hover {
     .menu-toggle.is-active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
+    #inicio {
+        justify-content: center; 
+        text-align: center;      
+        padding: 20px;           
+    }
+
+    .banner-conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .banner-conteudo h1 {
+        font-size: 26px;        
+        line-height: 1.3;
+    }
+
+    .banner-conteudo p {
+        font-size: 14px;        
+    }
 }
 
 footer {
