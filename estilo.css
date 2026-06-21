@@ -178,7 +178,8 @@ nav ul li a:hover {
 }
 
 .categoria {
-    margin-bottom: 70px;
+    margin-top: 50px;    
+    margin-bottom: 70px; 
 }
 
 .categoria h3 {
@@ -206,6 +207,7 @@ nav ul li a:hover {
     background-color: #FFFFFF; 
     border: 1px solid #E5D4C0; 
     width: 320px; 
+    flex: 0 0 320px; 
     border-radius: 15px; 
     box-shadow: 0 10px 20px rgba(0,0,0,0.03); 
     overflow: hidden; 
@@ -221,7 +223,9 @@ nav ul li a:hover {
     width: 100%; 
     height: 220px; 
     object-fit: cover; 
-    border-bottom: 2px solid #C5A880; 
+    border-bottom: 2px solid #C5A880;
+    display: block; 
+    background-color: #f0f0f0; 
 }
 
 .card h4 {
@@ -444,17 +448,74 @@ nav ul li a:hover {
     }
 }
 
-.no-scroll {
-    overflow: hidden;
-    height: 100vh;
+@media (max-width: 768px) {
+    .mobile-fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FDF8F5; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    }           
+    
+    .mobile-fixed-bar a {
+        font-size: 28px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .btn-whatsapp, .btn-instagram {
+    background-color:  transparent !important; 
+    padding: 10px;
+    border-radius: 0;
+    }
+
+    .btn-whatsapp i {
+    color: #25D366 !important;
+    font-size: 28px;
+    }
+    
+    .btn-instagram i {
+    color: #E1306C; 
+    font-size: 30px;
+    }
+
+    .btn-whatsapp, 
+    .btn-whatsapp:focus, 
+    .btn-whatsapp:active, 
+    .btn-whatsapp:visited {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-image: none !important;
+    }
+
+    .btn-whatsapp i {
+    background-color: transparent !important;
+    }
 }
 
+@media (max-width: 768px) {
+    body {
+    padding-bottom: 60px; 
+    }
+}
+    .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    }
 
-footer {
+    footer {
     background-color: #FFFFFF; 
     color: #C5A880; 
     text-align: center;
     font-style: italic;
     padding: 25px 0;
     border-top: 2px solid #C5A880;
-}
+    }
